@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: hsla(179, 62%, 43%, 0.13);
+  font-family: "Karla", sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+}
+@media (min-width: 600px) {
+  .main {
+    width: 55%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.main .card {
+  padding: 1.5rem;
+}
+@media (min-width: 600px) {
+  .main .card {
+    padding: 2.5rem;
+  }
+}
+.main .community {
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+}
+.main .community h1 {
+  font-size: 1.2rem;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 1.2rem;
+}
+.main .community .middle {
+  font-size: 1rem;
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  width: 85%;
+  margin-bottom: 1.2rem;
+}
+.main .community .description {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.55;
+}
+@media (min-width: 600px) {
+  .main .community {
+    grid-column: span 2;
+  }
+}
+.main .subscription {
+  background-color: hsl(179, 62%, 43%);
+}
+.main .subscription h2 {
+  font-size: 1.2rem;
+  color: white;
+}
+.main .subscription .flex {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+.main .subscription .flex h2 {
+  font-size: 2rem;
+}
+.main .subscription .flex p {
+  color: rgba(255, 255, 255, 0.555);
+  font-size: 0.8rem;
+}
+.main .subscription .access {
+  margin-top: 0.5rem;
+  color: hsl(204, 43%, 93%);
+  font-size: 0.9rem;
+}
+.main .subscription .btn {
+  margin-top: 1.5rem;
+  padding: 0.7rem;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.185);
+}
+.main .subscription .btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+@media (min-width: 600px) {
+  .main .subscription {
+    border-radius: 0 0 0 5px;
+  }
+  .main .subscription .access {
+    position: relative;
+    top: 1rem;
+  }
+  .main .subscription .btn {
+    position: relative;
+    top: 2rem;
+  }
+}
+.main .why-us {
+  background-color: hsla(179, 62%, 43%, 0.74);
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+.main .why-us ul {
+  list-style: none;
+}
+.main .why-us h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.main .why-us li {
+  margin-bottom: 0.3rem;
+  color: hsl(204, 43%, 93%);
+}
+@media (min-width: 600px) {
+  .main .why-us {
+    border-radius: 0 0 5px 0;
+  }
+  .main .why-us li {
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=style.css.map */
